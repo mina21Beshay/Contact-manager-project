@@ -387,5 +387,4 @@ function readCookie()
 // 	else if(len == 12) {
 // 		document.getElementById("searchNum")(2).value = currentInput.concat("-");
 // 	}
-
 // }
