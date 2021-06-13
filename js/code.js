@@ -13,6 +13,7 @@ var userID = 0;
 var firstName = "";
 var lastName = "";
 var username = "";
+var phoneNum = "";
 
 // Function to log in
 function login() {
@@ -164,7 +165,7 @@ function register() {
 // Function to search contacts
 function searchContacts() {
     var search = "";
-	search = document.getElementById("searchText").value;
+	search = document.getElementById("searchName").value;
 	console.log(search);
 	console.log(userID);
     document.getElementById("contactSearchResult").innerHTML = "";
@@ -235,7 +236,7 @@ function addContact() {
     try	{
 		xhr.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById("ccontactAddResult").innerHTML = "Contact has been added";
+				document.getElementById("contactAddResult").innerHTML = "Contact has been added";
 			}
 		};
 		xhr.send(jsonPayload);
@@ -371,3 +372,20 @@ function readCookie()
 		document.getElementById("displayUsername").innerHTML = username;
 	}
 }
+
+// function forcePhoneNumberFormat() {
+// 	var currentInput = document.getElementById("searchNum")(2).value;
+// 	var len = currentInput.length;
+// 	var head = "+1 ("
+
+// 	if(len == 0) {
+// 		document.getElementById("searchNum")(2).value = head;
+// 	}
+// 	else if(len == 7) {
+// 		document.getElementById("searchNum")(2).value = currentInput.concat(") ");
+// 	}
+// 	else if(len == 12) {
+// 		document.getElementById("searchNum")(2).value = currentInput.concat("-");
+// 	}
+
+// }
