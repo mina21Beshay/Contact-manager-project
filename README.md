@@ -5,7 +5,7 @@ Objective: Develop a contact mananger web app.
 ## Team Members and Roles
 | Team Member  | Role |
 | ------------- | ------------- |
-| mina21Beshay  | Project Manager [Let's be realistic :)] |
+| Mina  | Project Manager |
 | Ricardo  | Front End  |
 | Luis  | Database  |
 | Peyton Ryan  | API  |
